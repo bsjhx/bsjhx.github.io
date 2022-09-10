@@ -1,13 +1,28 @@
 ## Solana: first steps
-### Local installation
+### Develompment tools installation
 
-For MacOS and Linux:
+> :warning: All instructions are for Linux and MacOS, I'm using Mac with M1 processor.
 
-``` 
-sh -c "$(curl -sSfL https://release.solana.com/v1.11.10/install)"
+We need to install Solana and Rust. I assume that on machine npm is already installed.
+
+#### Rust installation
+To install Rust locally, run:
+
+``` sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
 ```
 
-But when running later build there can be a error:
+On Mac, you can also use homebrew:
 
+``` sh
+brew install rust
+```
 
-Docs [url](https://docs.solana.com/cli/install-solana-cli-tools)
+To check if Rust is installed run:
+``` sh
+ rustc -V
+```
+You should see installed version. For more details visit official [Rust page](https://www.rust-lang.org/tools/install).
+
+#### Solana installation
+Now we want to install Solana.
